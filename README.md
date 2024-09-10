@@ -45,16 +45,16 @@ The input file should contain the designed protein sequence in plain text format
 
 The script generates the following outputs:
 
-	1.	MMP_result.fasta: Contains the MMP scores and the corresponding mutated sequences in FASTA format.
-	2.	WTMP_result.fasta: Contains the WTMP scores and the corresponding mutated sequences in FASTA format.
-	3.	MMP_heatmap.pdf: A heatmap showing the predicted effects of mutations on the protein sequence based on the MMP model.
-	4.	WTMP_heatmap.pdf: A heatmap showing the predicted effects of mutations on the protein sequence based on the WTMP model.
+* __MMP_result.fasta__: Contains the MMP scores and the corresponding mutated sequences in FASTA format.
+* __WTMP_result.fasta__: Contains the WTMP scores and the corresponding mutated sequences in FASTA format.
+* __MMP_heatmap.pdf__: A heatmap showing the predicted effects of mutations on the protein sequence based on the MMP model.
+* __WTMP_heatmap.pdf__: A heatmap showing the predicted effects of mutations on the protein sequence based on the WTMP model.
 
 ## How It Works
 
-	1.	Load the ESM Model: The script loads the ESM2 model (esm2_t33_650M_UR50D) to make predictions about the protein sequence.
-	2.	Mutation Simulation: For each position in the input sequence, the script simulates mutations to all possible amino acids, calculates the MMP and WTMP scores using the loaded model, and records the results.
-	3.	Heatmap Generation: The calculated mutation scores are used to create two heatmaps (MMP and WTMP), showing the likelihood of mutations at different positions along the protein sequence.
-	4.	Save Results: The scores and mutated sequences are saved in FASTA format, and the heatmaps are saved as PDFs.
+* __Load the ESM Model__: The script loads the ESM2 model (esm2_t33_650M_UR50D) to make predictions about the protein sequence.
+* __Mutation Simulation__: For each position in the input sequence, the script simulates mutations to all possible amino acids, calculates the MMP and WTMP scores using the loaded model, and records the results.
+* __Heatmap Generation__: The calculated mutation scores are used to create two heatmaps (MMP and WTMP), showing the likelihood of mutations at different positions along the protein sequence.
+* __Save Results__: The scores and mutated sequences are saved in FASTA format, and the heatmaps are saved as PDFs.
 
 
