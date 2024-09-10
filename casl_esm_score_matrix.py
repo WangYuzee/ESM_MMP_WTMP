@@ -22,6 +22,7 @@ with open(inputfile) as f:
     designed_seq=f.readlines()
 
 # 设置新的模型缓存位置
+os.makedirs('./Model', exist_ok=True)
 os.environ['TORCH_HOME'] = './Model'
 model_name = 'esm2_t33_650M_UR50D'
 model, alphabet = esm.pretrained.load_model_and_alphabet(model_name)
